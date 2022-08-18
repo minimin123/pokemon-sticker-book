@@ -10,7 +10,6 @@ import ErrorComponent from '../src/components/error/error';
 
 export default function Result() {
   const router = useRouter();
-
   const pokemonId = String(router.query?.pokemon);
 
   const { data, isError, isLoading } = useQuery(
@@ -30,13 +29,13 @@ export default function Result() {
 
   return (
     <main>
-      <OgTags title={name} description={name} img={image} />
+      <OgTags title={data?.name} description={data?.name} img={image} />
       <Sticker id={id} name={name} image={image} />
     </main>
   );
 }
 
-export const getStaticProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const queryClient = new QueryClient();
   const id = context.params?.pokemon;
 
@@ -50,8 +49,3 @@ export const getStaticProps = async (context) => {
     },
   };
 };
-
-export const getStaticPaths = async () => ({
-  paths: [],
-  fallback: 'blocking',
-});
