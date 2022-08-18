@@ -10,8 +10,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
-        <SearchBar />
         <Global styles={reset} />
+        <SearchBar />
         <Component {...pageProps} />
       </Hydrate>
     </QueryClientProvider>

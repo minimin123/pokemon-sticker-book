@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { dehydrate, QueryClient, useQuery } from 'react-query';
 
 import { getPokemonById } from '../src/service';
+
 import OgTags from '../src/components/ogTags/ogTags';
 import Sticker from '../src/components/sticker/sticker';
 import SkeletonComponent from '../src/components/skeleton/skeleton';
