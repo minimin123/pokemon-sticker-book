@@ -1,7 +1,8 @@
-/* eslint-disable no-use-before-define */
 import { useRouter } from 'next/router';
 import { useState } from 'react';
-import styled from '@emotion/styled';
+
+import { Header } from './searchBar.styles';
+import CollectionIcon from '../../assets/collection.svg';
 
 export default function SearchBar() {
   const router = useRouter();
@@ -18,40 +19,18 @@ export default function SearchBar() {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <input type="text" onChange={handleChangeInput} autoFocus />
-      <button type="submit">SEARCH</button>
-    </Form>
+    <Header>
+      <button type="button" onClick={() => router.push('/')}>
+        <h1>SEARCH POKEMON</h1>
+      </button>
+      <form onSubmit={handleSubmit}>
+        <input type="text" onChange={handleChangeInput} autoFocus />
+        <button type="submit">SEARCH</button>
+        <CollectionIcon
+          onClick={() => router.push('collection')}
+          alt="collection button"
+        />
+      </form>
+    </Header>
   );
 }
-
-const Form = styled.form`
-  display: flex;
-  margin-bottom: 50px;
-
-  input {
-    width: 300px;
-    height: 50px;
-    border: 2px solid black;
-    padding: 0 20px;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-family: 'Montserrat';
-    :focus {
-      outline: none;
-    }
-
-    @media all and (max-width: 400px) {
-      width: 200px;
-    }
-  }
-  button {
-    width: 100px;
-    border: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-    font-family: 'Montserrat';
-  }
-`;
