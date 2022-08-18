@@ -17,6 +17,8 @@ export default function Result() {
     () => getPokemonById(pokemonId),
     {
       enabled: !!pokemonId,
+      refetchOnWindowFocus: false,
+      refetchOnMount: false,
     },
   );
 

@@ -32,11 +32,19 @@ export default function Sticker({ id, name, image }: Pokemon) {
           <div className="label">
             <span className="name">
               <span className="id">{id}</span>
-              {name.toUpperCase()}
+              {name?.toUpperCase()}
             </span>
           </div>
-          <img src={image} alt={name} />
-          <p>@Pokemon</p>
+          <img src={image ?? Pokeball.src} alt={name} />
+          {image ? (
+            <p>@Pokemon</p>
+          ) : (
+            <div>
+              There is no image.
+              <br />
+              Check the QR code on the back of the sticker for more information.
+            </div>
+          )}
         </section>
         <section className="back">
           <img src={PokemonLogo.src} alt="pokemon logo" />

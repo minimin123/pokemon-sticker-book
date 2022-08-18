@@ -48,6 +48,7 @@ export const Flip = styled.div`
     @media all and (max-width: 400px) {
       padding: 25px;
     }
+
     .label {
       font-size: 26px;
       @media all and (max-width: 400px) {
@@ -56,7 +57,7 @@ export const Flip = styled.div`
 
       .name {
         background-color: white;
-        padding-right: 25px;
+        padding-right: 17px;
         border: 2px solid black;
         border-radius: 20px;
         font-weight: bold;
@@ -68,8 +69,8 @@ export const Flip = styled.div`
         .id {
           background-color: black;
           color: white;
-          margin-right: 20px;
-          padding: 0 25px;
+          margin-right: 15px;
+          padding: 0 20px;
           border-radius: 15px;
           @media all and (max-width: 400px) {
             margin-right: 15px;

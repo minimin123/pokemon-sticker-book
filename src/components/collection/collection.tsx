@@ -1,4 +1,5 @@
 import { Wrap } from './collection.styles';
+import Pokeball from '../../assets/pokeball-icon.png';
 
 export default function Collection({ collection }) {
   return (
@@ -10,7 +11,7 @@ export default function Collection({ collection }) {
         {collection?.map((item, index) => (
           <div className="sticker" key={`collection-${index}`}>
             <span className="id">{item.id}</span>
-            <img src={item.image} alt={item.name} />
+            <img src={item.image ?? Pokeball.src} alt={item.name} />
             <div className="name">{item.name}</div>
           </div>
         ))}
