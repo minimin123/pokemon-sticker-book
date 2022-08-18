@@ -31,7 +31,7 @@ export default function Result() {
 
   return (
     <main>
-      <OgTags title={data?.name} description={data?.name} img={image} />
+      <OgTags title={name} description={name} img={image} />
       <Sticker id={id} name={name} image={image} />
     </main>
   );
@@ -41,7 +41,7 @@ export const getServerSideProps = async (context) => {
   const queryClient = new QueryClient();
   const id = context.params?.pokemon;
 
-  await queryClient.prefetchQuery(['getPokemon'], () =>
+  await queryClient.prefetchQuery(['getPokemon', String(id)], () =>
     getPokemonById(String(id)),
   );
 

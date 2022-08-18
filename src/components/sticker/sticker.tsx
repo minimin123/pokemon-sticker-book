@@ -12,9 +12,9 @@ interface Pokemon {
 
 export default function Sticker({ id, name, image }: Pokemon) {
   const currentPokemon = { id, name, image };
-  const prevPokemonList = JSON.parse(localStorage.getItem('pokemonList'));
 
   useEffect(() => {
+    const prevPokemonList = JSON.parse(localStorage.getItem('pokemonList'));
     if (!prevPokemonList) {
       localStorage.setItem('pokemonList', JSON.stringify([currentPokemon]));
     } else {
