@@ -1,4 +1,3 @@
-/* eslint-disable no-use-before-define */
 import styled from '@emotion/styled';
 import QR from 'qrcode.react';
 
