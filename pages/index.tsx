@@ -15,7 +15,7 @@ export default function Home() {
   );
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
   h1 {
     text-align: center;
   }

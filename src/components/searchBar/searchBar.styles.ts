@@ -4,7 +4,7 @@ export const Header = styled.header`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 50px;
+  padding-top: 20px;
 
   button {
     background-color: transparent;
@@ -26,7 +26,7 @@ export const Header = styled.header`
   form {
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 30px;
 
     input {
       width: 240px;

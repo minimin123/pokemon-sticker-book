@@ -29,10 +29,10 @@ export default function Result() {
   if (isLoading) return <SkeletonComponent />;
 
   return (
-    <div>
+    <main>
       <OgTags title={name} description={name} img={image} />
       <Sticker id={id} name={name} image={image} />
-    </div>
+    </main>
   );
 }
 
