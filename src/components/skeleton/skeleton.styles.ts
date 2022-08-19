@@ -1,14 +1,15 @@
 import styled from '@emotion/styled';
+import { color } from '../../../styles/theme';
 
-export const Wrapper = styled.div`
+export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   padding: 50px;
   margin: 0 auto;
   width: 400px;
   height: 500px;
-  background-color: white;
-  border: 2px solid black;
+  background-color: ${color.WHITE};
+  border: 2px solid ${color.BLACK};
 
   @media all and (max-width: 400px) {
     width: 300px;
@@ -25,7 +26,7 @@ export const Wrapper = styled.div`
   .name {
     width: 240px;
     height: 35px;
-    background-color: lightgray;
+    background-color: ${color.LIGHTGRAY};
     margin-bottom: 60px;
     border-radius: 50px;
     background-image: linear-gradient(
@@ -48,7 +49,7 @@ export const Wrapper = styled.div`
     width: 270px;
     height: 270px;
     margin: 0 auto;
-    background-color: lightgray;
+    background-color: ${color.LIGHTGRAY};
     border-radius: 50%;
     background-image: linear-gradient(
       90deg,

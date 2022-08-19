@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
+import { color } from '../../../styles/theme';
 
-export const Wrapper = styled.div`
+export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   padding: 50px;
   width: 400px;
   height: 500px;
-  background-color: white;
-  border: 2px solid black;
-  font-family: 'Montserrat';
+  background-color: ${color.WHITE};
+  border: 2px solid ${color.BLACK};
   margin: 0 auto;
 
   @media all and (max-width: 400px) {
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
   .title {
     font-size: 26px;
     font-weight: bold;
-    color: red;
+    color: ${color.RED};
     @media all and (max-width: 400px) {
       font-size: 16px;
     }

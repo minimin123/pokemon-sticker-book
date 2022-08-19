@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { color } from '../../../styles/theme';
 
 export const Flip = styled.div`
   position: relative;
@@ -6,7 +7,6 @@ export const Flip = styled.div`
   width: 400px;
   height: 500px;
   perspective: 1980px;
-  font-family: 'Montserrat';
 
   @media all and (max-width: 400px) {
     width: 300px;
@@ -27,8 +27,8 @@ export const Flip = styled.div`
     position: relative;
     transition: 0.4s;
     transform-style: preserve-3d;
-    background-color: white;
-    border: 2px solid black;
+    background-color: ${color.WHITE};
+    border: 2px solid ${color.BLACK};
   }
 
   .front,
@@ -45,6 +45,7 @@ export const Flip = styled.div`
     flex-direction: column;
     justify-content: space-between;
     padding: 50px;
+    overflow-x: hidden;
     @media all and (max-width: 400px) {
       padding: 25px;
     }
@@ -56,19 +57,21 @@ export const Flip = styled.div`
       }
 
       .name {
-        background-color: white;
-        padding-right: 17px;
-        border: 2px solid black;
-        border-radius: 20px;
+        overflow: hidden;
         font-weight: bold;
+        padding-right: 17px;
+        border: 2px solid ${color.BLACK};
+        border-radius: 20px;
+        background-color: ${color.WHITE};
         user-select: none;
+
         @media all and (max-width: 400px) {
           padding-right: 15px;
         }
 
         .id {
-          background-color: black;
-          color: white;
+          background-color: ${color.BLACK};
+          color: ${color.WHITE};
           margin-right: 15px;
           padding: 0 20px;
           border-radius: 15px;

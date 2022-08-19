@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { color } from '../../../styles/theme';
 
 export const Header = styled.header`
   display: flex;
@@ -20,7 +21,6 @@ export const Header = styled.header`
   h1 {
     font-size: 40px;
     text-align: center;
-    font-family: 'Montserrat';
   }
 
   form {
@@ -31,11 +31,10 @@ export const Header = styled.header`
     input {
       width: 240px;
       height: 50px;
-      border: 2px solid black;
+      border: 2px solid ${color.BLACK};
       padding: 0 20px;
       box-sizing: border-box;
       font-size: 20px;
-      font-family: 'Montserrat';
       :focus {
         outline: none;
       }
@@ -48,11 +47,10 @@ export const Header = styled.header`
     button {
       width: 100px;
       border: none;
-      background-color: black;
-      color: white;
+      background-color: ${color.BLACK};
+      color: ${color.WHITE};
       cursor: pointer;
       font-size: 18px;
-      font-family: 'Montserrat';
     }
   }
 `;

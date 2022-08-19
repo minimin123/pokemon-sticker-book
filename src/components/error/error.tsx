@@ -1,15 +1,14 @@
-import { Wrapper } from './error.styles';
-import Pokeball from '../../assets/pokeball-icon.png';
+import { Wrap } from './error.styles';
 
 export default function ErrorComponent() {
   return (
-    <Wrapper>
+    <Wrap>
       <div className="title">ERROR</div>
       <div className="message">
         Please check Pokemon ID <br />
         or name again
       </div>
-      <img src={Pokeball.src} alt="error" />
-    </Wrapper>
+      <img src="/pokeball-icon.png" alt="error" />
+    </Wrap>
   );
 }

@@ -1,10 +1,10 @@
-import { Wrapper } from './skeleton.styles';
+import { Wrap } from './skeleton.styles';
 
 export default function SkeletonComponent() {
   return (
-    <Wrapper>
+    <Wrap>
       <div className="name" />
       <div className="contents" />
-    </Wrapper>
+    </Wrap>
   );
 }

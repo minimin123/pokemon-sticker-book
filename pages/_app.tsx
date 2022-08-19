@@ -1,5 +1,6 @@
-import { Global } from '@emotion/react';
 import { QueryClient, QueryClientProvider, Hydrate } from 'react-query';
+import { Global } from '@emotion/react';
+
 import SearchBar from '../src/components/searchBar/searchBar';
 
 import { reset } from '../styles/reset';

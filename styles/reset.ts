@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import { color } from './theme';
 
 export const reset = css`
   * {
@@ -97,7 +98,7 @@ export const reset = css`
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    font-family: 'Montserrat';
     vertical-align: baseline;
   }
   /* HTML5 display-role reset for older browsers */
@@ -113,6 +114,7 @@ export const reset = css`
   nav,
   section {
     display: block;
+    font-family: 'Montserrat';
   }
   body {
     line-height: 1;
@@ -121,7 +123,8 @@ export const reset = css`
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-    background-color: #f2eddd;
+    background-color: ${color.BG};
+    font-family: 'Montserrat';
   }
   ol,
   ul {
