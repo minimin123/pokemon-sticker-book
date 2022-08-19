@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { color } from '../../styles/theme';
+import { color } from './theme';
 
 export const Wrap = styled.main`
   position: relative;
