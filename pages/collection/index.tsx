@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Wrap } from './collection.styles';
+import { Wrap } from '../../styles/collection.styles';
 
 export default function CollectionPage() {
   const [collection, setCollection] = useState([]);
