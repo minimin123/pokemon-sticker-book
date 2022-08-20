@@ -13,10 +13,22 @@ yarn dev
 ```
 -----------------------
 ## Description
-POKEMON STICKER BOOK은 포켓몬의 번호와 이름을 검색하고, 검색 결과를 스티커처럼 모을 수 있는 웹페이지 입니다.
+POKEMON STICKER BOOK은 포켓몬의 번호와 이름을 검색하고, 검색 결과를 스티커처럼 모을 수 있는 웹페이지 입니다. Next.js의 getServerSideProps를 이용한 서버사이드 렌더링 구현을 목표로 제작하였습니다.
 
 
-### 1. 기능 목록
+### 1. 기술스택 및 사용한 라이브러리
+ 
+ - Next.js
+ - Typescript
+ - React
+ - React-Query 
+ - Axios
+ - Qrcode.react
+ - Emotion
+ - EsLint, Prettier
+ 
+
+### 2. 기능 목록
 
 |기능|구현|
 |---|---|
@@ -25,7 +37,7 @@ POKEMON STICKER BOOK은 포켓몬의 번호와 이름을 검색하고, 검색 �
 |QR코드 생성|qrcode.react 라이브러리|
 
 
-### 2. 상세 기능
+### 3. 상세 기능
 #### 1) 포켓몬 번호로 포켓몬 스티커를 검색할 수 있습니다.
 - axios와 react-query를 통한 비동기통신으로 입력한 포켓몬의 데이터를 조회합니다.
 - 스티커를 Hover 시, 뒷면의 QR코드가 나타납니다. QR코드는 qrcode.react 라이브러리를 통하여 구현하였습니다. 
@@ -40,16 +52,7 @@ POKEMON STICKER BOOK은 포켓몬의 번호와 이름을 검색하고, 검색 �
  - 메타 태그 적용하여 페이지 공유 시 미리보기 지원됩니다. <br><img src='https://user-images.githubusercontent.com/97211582/185539065-8ef76308-2a16-4d96-bdaf-0948c8f8f263.gif' width=50%>
  
  
- ### 3. 기술스택 및 사용한 라이브러리 등
- 
- - Next.js
- - Typescript
- - React
- - React-Query
- - Axios
- - Qrcode.react
- - Emotion
- - EsLint, Prettier
+
 
 -----------------------
 
