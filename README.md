@@ -3,7 +3,7 @@
 <img src ='https://user-images.githubusercontent.com/97211582/185539087-ad6bb5cf-eead-4cf7-abed-da8f0ae53dd6.gif' width=50%>
 
 #### 프로젝트 기간 : 2022.08.17 ~ 2022.08.19
-#### URL : https://pokemon-sticker-book-minimin123.vercel.app/
+#### URL : https://pokemon-sticker-book.vercel.app/
 
 ### Getting Started
 
@@ -50,7 +50,6 @@ POKEMON STICKER BOOK은 포켓몬의 번호와 이름을 검색하고, 검색 �
 #### 3) 각각의 스티커 페이지들은 서버사이드 렌더링 됩니다. 
  - 각 스티커 페이지는 Next.js의 getServerSideProps를 이용한 서버사이드 렌더링을 통하여 구현했습니다.
  - 메타 태그 적용하여 페이지 공유 시 미리보기 지원됩니다. <br><img src='https://user-images.githubusercontent.com/97211582/185539065-8ef76308-2a16-4d96-bdaf-0948c8f8f263.gif' width=50%>
- 
  
 
 
