@@ -6,7 +6,7 @@
 #### URL : https://pokemon-sticker-book.vercel.app/
 
 ### Update
-- 2022.08.26. next/image를 사용하여 레이지로딩되도록 
+- 2022.08.26. next/image를 사용하여 레이지로딩되도록 구현
 
 ### Getting Started
 
