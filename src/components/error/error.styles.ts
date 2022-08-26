@@ -33,15 +33,4 @@ export const Wrap = styled.div`
       font-size: 14px;
     }
   }
-
-  img {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-
-    @media all and (max-width: 400px) {
-      width: 200px;
-      height: 200px;
-    }
-  }
 `;

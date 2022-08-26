@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 import { Wrap } from '../../styles/collection.styles';
@@ -21,7 +22,12 @@ export default function CollectionPage() {
           {collection?.map((item, index) => (
             <div className="sticker" key={`collection-${index}`}>
               <span className="id">{item.id}</span>
-              <img src={item.image ?? '/pokeball-icon.png'} alt={item.name} />
+              <Image
+                src={item.image ?? '/pokeball-icon.png'}
+                alt={item.name}
+                width={150}
+                height={150}
+              />
               <div className="name">{item.name}</div>
             </div>
           ))}

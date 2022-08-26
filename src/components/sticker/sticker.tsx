@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import QR from 'qrcode.react';
 import { useEffect } from 'react';
 import { Flip } from './sticker.styles';
@@ -33,7 +34,12 @@ export default function Sticker({ id, name, image }: Pokemon) {
               {name?.toUpperCase()}
             </span>
           </div>
-          <img src={image ?? '/pokeball-icon.png'} alt={name} />
+          <Image
+            src={image ?? '/pokeball-icon.png'}
+            alt={name}
+            width={300}
+            height={300}
+          />
           {image ? (
             <p>@Pokemon</p>
           ) : (
@@ -45,7 +51,7 @@ export default function Sticker({ id, name, image }: Pokemon) {
           )}
         </section>
         <section className="back">
-          <img src="/pokemon-logo.png" alt="pokemon logo" />
+          <img src="/pokemon-logo.png" alt="pokemon logo" width={250} />
           <QR
             value={`https://www.pokemonkorea.co.kr/pokedex?snumber=${id}&snumber2=${id}`}
             size={140}

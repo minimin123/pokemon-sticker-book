@@ -65,11 +65,6 @@ export const Wrap = styled.main`
           margin-top: 10px;
           text-align: center;
         }
-
-        img {
-          width: 150px;
-          height: 150px;
-        }
       }
     }
 

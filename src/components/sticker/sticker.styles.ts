@@ -82,7 +82,7 @@ export const Flip = styled.div`
       }
     }
 
-    img {
+    /* img {
       width: 300px;
       height: 300px;
       margin: 0 auto;
@@ -92,7 +92,7 @@ export const Flip = styled.div`
         width: 200px;
         height: 200px;
       }
-    }
+    } */
 
     p {
       font-size: 19px;
