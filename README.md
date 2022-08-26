@@ -5,6 +5,9 @@
 #### 프로젝트 기간 : 2022.08.17 ~ 2022.08.19
 #### URL : https://pokemon-sticker-book.vercel.app/
 
+### Update
+- 2022.08.26. next/image를 사용하여 레이지로딩되도록 
+
 ### Getting Started
 
 ```bash
@@ -35,7 +38,7 @@ POKEMON STICKER BOOK은 포켓몬의 번호와 이름을 검색하고, 검색 �
 |비동기 통신|axios, react-query|
 |데이터 저장|local storage|
 |QR코드 생성|qrcode.react 라이브러리|
-
+|레이지로딩|Next/Image|
 
 ### 3. 상세 기능
 #### 1) 포켓몬 번호로 포켓몬 스티커를 검색할 수 있습니다.
@@ -46,6 +49,7 @@ POKEMON STICKER BOOK은 포켓몬의 번호와 이름을 검색하고, 검색 �
 
 #### 2) 조회한 스티커 목록을 collection 페이지에서 확인할 수 있습니다.
  - 각각의 스티커는 local storage에 데이터가 저장됩니다.
+ - Next Image를 활용하여 lazy loading되도록 구현했습니다.
  
 #### 3) 각각의 스티커 페이지들은 서버사이드 렌더링 됩니다. 
  - 각 스티커 페이지는 Next.js의 getServerSideProps를 이용한 서버사이드 렌더링을 통하여 구현했습니다.
